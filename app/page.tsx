@@ -18,9 +18,7 @@ export default function Home() {
       image:
         'https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800',
     },
-    {name:"Burger Combo",price:"₦7,000",image:"..."},
-    {name:"Pepper Soup",price:"₦4,500",image:"..."},
-    {name:"Chocolate Cake",price:"₦3,500",image:"..."},
+    
   ];
 
   return (
