@@ -51,6 +51,10 @@ export default function Home() {
           <a href="#contact" className="hover:text-orange-500">
             Contact
           </a>
+          
+          <a href="/cart">
+           🛒 Cart
+          </a>
         </div>
 
       </nav>
