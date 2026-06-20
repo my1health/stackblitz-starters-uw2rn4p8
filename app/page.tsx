@@ -1,4 +1,9 @@
+"use client";
+
+import { useCart } from "@/components/CartContext";
+
 export default function Home() {
+  const {addToCart}=useCart();
   const menuItems = [
     {
       name: "Jollof Rice",
@@ -122,10 +127,17 @@ export default function Home() {
                 </p>
 
 
-                <button className="mt-5 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
-                  Add to Order
-                </button>
+                <button
+                 onClick={()=>addToCart({
+                  name:item.name,
+                  price:Number(item.price.replace("₦","").replace(",","")),
+                  image:item.image
+                 })}
+                 className="mt-4 bg-black text-white px-5 py-2 rounded"
+                >
 
+                 Add to Order
+                </button>
               </div>
 
             </div>
